@@ -290,7 +290,7 @@ def MakeMend(request):
       test = np.array(test).reshape(1,-1)
       print(test.shape)
       
-      clf = joblib.load('model/decision_tree.pkl')
+      clf = joblib.load('model/medical_nb.pkl')
       prediction = clf.predict(test)
       prediction = prediction[0]
       print('Predicted Medicine Is',prediction)
